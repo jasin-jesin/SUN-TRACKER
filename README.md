@@ -1,5 +1,5 @@
-Sun Tracker – Perimeter-Sensing 2-Axis (4 LDRs at the Edges)
-Overview
+# Sun Tracker – Perimeter-Sensing 2-Axis (4 LDRs at the Edges)
+## Overview
 
 A two-axis solar tracker that uses four light sensors placed at the edges (left, right, top, bottom) instead of the common center cluster. This perimeter-sensing layout gives a wider baseline, reduces the “dead zone” around the cross-divider, and improves response under uneven lighting (cloud edges, reflections).
 
@@ -11,7 +11,7 @@ MCU: Arduino or ESP32 (both mappings provided)
 
 Use case: Teaching, demos, small PV panel alignment, robotics projects
 
-Key Features
+## Key Features
 
 Perimeter sensor geometry: better differential signal and fewer false neutrals
 
@@ -23,7 +23,7 @@ Quick calibration: normalize sensors so build tolerances don’t matter
 
 Portable build: lightweight frame designed for classrooms/workshops
 
-Bill of Materials
+## Bill of Materials
 
 1× Microcontroller (Arduino Uno/Nano or ESP32/ESP32-S3)
 
@@ -39,7 +39,7 @@ Breadboard or PCB, wires, 5 V supply (servos powered separately from MCU 5 V/3.3
 
 Optional: 2× limit switches (end-stops), 1× OLED for angles/telemetry, buzzer
 
-Wiring
+## Wiring
 Voltage & Ground
 
 Servos: power from a dedicated 5–6 V rail (capable ~1–2 A peak), shared GND with MCU
@@ -67,7 +67,7 @@ Tilt Servo (PWM)	GPIO27
 
 Servo power tip: add a 100–470 µF electrolytic near the servo rail.
 
-How It Works
+## How It Works
 Perimeter Geometry
 
 Placing sensors at the edges increases the angular separation between opposing pairs:
