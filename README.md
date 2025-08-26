@@ -45,7 +45,7 @@ Voltage & Ground
 Servos: power from a dedicated 5–6 V rail (capable ~1–2 A peak), shared GND with MCU
 
 LDR dividers: connect to MCU analog inputs; top to 3.3 V/5 V (match your board), bottom to GND
-
+<pre>
 Arduino (Uno/Nano) example
 Signal	Pin
 Left LDR (A0)	A0
@@ -62,7 +62,7 @@ Top LDR	GPIO34*
 Bottom LDR	GPIO35*
 Pan Servo (PWM)	GPIO14
 Tilt Servo (PWM)	GPIO27
-
+</pre>
 * Read-only ADC pins on many ESP32 variants—good for sensors.
 
 Servo power tip: add a 100–470 µF electrolytic near the servo rail.
@@ -71,7 +71,7 @@ Servo power tip: add a 100–470 µF electrolytic near the servo rail.
 Perimeter Geometry
 
 Placing sensors at the edges increases the angular separation between opposing pairs:
-
+<pre>
 Horizontal error (Eₓ) = Right - Left
 
 Vertical error (Eᵧ) = Top - Bottom
@@ -93,6 +93,7 @@ If |Eₓ| < DB and |Eᵧ| < DB → hold position (deadband).
 Else, step servos toward reducing error, with step size proportional to |E| and capped by soft limits.
 
 Apply hysteresis (slightly different engage/release thresholds) to avoid micro-oscillation.
+</pre>
 
 Optional: swap step controller for PI/PID if you want smooth, continuous motion.
 
