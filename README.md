@@ -120,7 +120,7 @@ PAN_MIN, PAN_MAX   = 20°, 160°
 TILT_MIN, TILT_MAX = 20°, 140°
 LOOP_DELAY_MS      = 50–100
 
-Build & Run
+## Build & Run
 
 Wire sensors and servos; power servos from a solid 5–6 V source; share GND.
 
@@ -130,7 +130,7 @@ Watch serial telemetry: raw L,R,T,B → normalized → Eₓ,Eᵧ → commanded a
 
 Aim a torch/sunlamp to test tracking indoors before outdoor trials.
 
-Results & Observations
+## Results & Observations
 
 Faster lock-on versus center-cluster trackers—edge sensors produce larger differential early.
 
@@ -148,7 +148,7 @@ Servo wire clearance: initial design pinched the horn/wires at extreme tilt → 
 
 keep this section growing with photos/gifs—recruiters love the engineering story.
 
-Folder Structure
+## Folder Structure
 .
 ├─ /src                 # code
 ├─ /hardware            # STL/CAD, laser files, mechanical drawings
@@ -156,7 +156,7 @@ Folder Structure
 ├─ /docs                # photos, gifs, test logs
 └─ README.md            # this file
 
-Upgrade Ideas
+## Upgrade Ideas
 
 PI/PID loop for smoother motion
 
@@ -168,7 +168,7 @@ Small OLED for angles and light levels
 
 Weather-proof enclosure + UV-stable sensors
 
-Troubleshooting
+## Troubleshooting
 
 Chatter / twitching: increase DEADBAND or add HYSTERESIS; check servo power and add bulk capacitor.
 
@@ -178,10 +178,10 @@ No movement: hit soft limits? check angle caps; verify shared ground.
 
 One sensor dominates: re-normalize; check divider resistor values match.
 
-License
+## License
 
 MIT (change if you prefer).
 
-Credits
+## Credits
 
 Concept & build by Jasin Jesin. Perimeter-sensing geometry, classroom-friendly design, and documentation tailored for teaching.
