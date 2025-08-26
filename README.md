@@ -97,7 +97,7 @@ Apply hysteresis (slightly different engage/release thresholds) to avoid micro-o
 
 Optional: swap step controller for PI/PID if you want smooth, continuous motion.
 
-Calibration (5 min)
+## Calibration (5 min)
 
 Shade Test: briefly cover each LDR; confirm the correct channel dips—fix wiring if not.
 
