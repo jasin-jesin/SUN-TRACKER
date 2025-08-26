@@ -149,13 +149,13 @@ Servo wire clearance: initial design pinched the horn/wires at extreme tilt → 
 keep this section growing with photos/gifs—recruiters love the engineering story.
 
 ## Folder Structure
-.
+<pre>.
 ├─ /src                 # code
 ├─ /hardware            # STL/CAD, laser files, mechanical drawings
 ├─ /schematics          # fritzing/EDA files & PNGs
 ├─ /docs                # photos, gifs, test logs
 └─ README.md            # this file
-
+</pre>
 ## Upgrade Ideas
 
 PI/PID loop for smoother motion
